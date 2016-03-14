@@ -1,6 +1,7 @@
 package it.alagna.anagrams.service;
 
 import it.alagna.anagrams.model.AnagramClassModel;
+import it.alagna.anagrams.service.impl.BasicAnagramService;
 import it.alagna.anagrams.service.impl.DirectPickingAnagramService;
 
 import java.io.BufferedReader;
@@ -10,7 +11,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Collection;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class AnagramServiceIntegrationTest
@@ -19,34 +19,43 @@ public class AnagramServiceIntegrationTest
 	private static final String DICTIONARY_FILENAME = "dictionary.txt";
 	private static final String DICTIONARY2_FILENAME = "dictionary2.txt";
 	
-	private AnagramService anagramService;
-	
-	@Before
-	public void setUp() throws Exception
-	{
-		anagramService = new DirectPickingAnagramService();
-//		((LengthMappingAnagramService)anagramService).setAnagramStrategy(new BasicAnagramStrategy());
-	}
-
 	@Test
-	public void test_sampleFile() throws IOException
+	public void test_sampleFile_basic() throws IOException
 	{
-		test(SAMPLE_FILENAME);
-	}
-	
-//	@Test
-	public void test_dictionary2() throws IOException
-	{
-		test(DICTIONARY2_FILENAME);
+		test(SAMPLE_FILENAME, new BasicAnagramService());
 	}
 	
 	@Test
-	public void test_dictionary() throws IOException
+	public void test_sampleFile_dp() throws IOException
 	{
-		test(DICTIONARY_FILENAME);
+		test(SAMPLE_FILENAME, new DirectPickingAnagramService());
 	}
 	
-	protected void test(String filename) throws IOException
+	@Test
+	public void test_shortDictionary_basic() throws IOException
+	{
+		test(DICTIONARY2_FILENAME, new BasicAnagramService());
+	}
+	
+	@Test
+	public void test_shortDictionary_dp() throws IOException
+	{
+		test(DICTIONARY2_FILENAME, new DirectPickingAnagramService());
+	}
+	
+	@Test
+	public void test_fullDictionary_basic() throws IOException
+	{
+		test(DICTIONARY_FILENAME, new BasicAnagramService());
+	}
+	
+	@Test
+	public void test_fullDictionary_dp() throws IOException
+	{
+		test(DICTIONARY_FILENAME, new DirectPickingAnagramService());
+	}
+	
+	protected void test(String filename, AnagramService anagramService) throws IOException
 	{
 		long currentTime = System.currentTimeMillis();
 		System.out.println(String.format("******** Processing file '%s' - rows: %d *********", filename, getNumberOfWords(filename)));
