@@ -18,7 +18,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DatabaseWritingAnagramService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java">
           <value>
             <set />
           </value>

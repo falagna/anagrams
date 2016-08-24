@@ -16,7 +16,7 @@ import java.util.Map;
 public class DirectPickingAnagramService implements AnagramService
 {
 	@Override
-	public Collection<AnagramClassModel> processAnagramsFile(File file) throws IOException
+	public Collection<AnagramClassModel> processAnagramsFile(final File file) throws IOException
 	{
 		if(!file.exists())
 		{
@@ -24,13 +24,13 @@ public class DirectPickingAnagramService implements AnagramService
 		}
 		
 		// In this implementation, the found anagram classes will be stored in an HashMap
-		Map<String, AnagramClassModel> anagramClasses = new LinkedHashMap<String, AnagramClassModel>();
+		final Map<String, AnagramClassModel> anagramClasses = new LinkedHashMap<>();
 		
 		try(BufferedReader reader = new BufferedReader(new FileReader(file)))
 		{
 			while(true)
 			{
-				String line = reader.readLine();
+				final String line = reader.readLine();
 				
 				if(line == null)
 				{
@@ -44,12 +44,12 @@ public class DirectPickingAnagramService implements AnagramService
 				 *  the correct anagram class by using the (alphabetically) sorted version of
 				 *  the string as key both to store and to retrieve.
 				 */
-				char[] sortedString = line.toCharArray();				
+				final char[] sortedString = line.toCharArray();
 				Arrays.sort(sortedString);
-				String sortedLine = new String(sortedString);
+				final String sortedLine = new String(sortedString);
 				
 
-				AnagramClassModel targetAnagramClass = anagramClasses.get(sortedLine);
+				final AnagramClassModel targetAnagramClass = anagramClasses.get(sortedLine);
 				
 				if(targetAnagramClass != null)
 				{

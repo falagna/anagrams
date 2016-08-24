@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a4b766-b739-4fc3-812b-53aef39e9fbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/fala2811.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/anagrams.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DatabaseWritingAnagramService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/FileWritingAnagramService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/model/AnagramClassModel.java" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/model/AnagramClassModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/it/alagna/anagrams/service/AnagramServiceIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/it/alagna/anagrams/service/AnagramServiceIntegrationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java" afterPath="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java" />
     </list>
     <ignored path="anagrams.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BasicAnagramService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BasicAnagramService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="210">
+              <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -62,9 +44,11 @@
       <file leaf-file-name="FileWritingAnagramService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/FileWritingAnagramService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="7" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,8 +56,8 @@
       <file leaf-file-name="DatabaseWritingAnagramService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DatabaseWritingAnagramService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1583">
-              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="-1140">
+              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5856#5857#0" expanded="true" />
@@ -106,18 +90,18 @@
       <file leaf-file-name="HsqlDatabaseWritingAnagramService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+            <state relative-caret-position="390">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MysqlDatabaseWritingAnagramService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MysqlDatabaseWritingAnagramService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="375">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -126,12 +110,9 @@
       <file leaf-file-name="DirectPickingAnagramService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="51" column="84" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#849#876#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,10 +172,12 @@
         <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/temp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DatabaseWritingAnagramService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/alagna/anagrams/service/AnagramServiceIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/model/AnagramClassModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java" />
       </list>
     </option>
   </component>
@@ -992,7 +975,7 @@
       <workItem from="1471873430692" duration="1545000" />
       <workItem from="1471875394052" duration="1878000" />
       <workItem from="1471935209615" duration="9377000" />
-      <workItem from="1471978272994" duration="8905000" />
+      <workItem from="1471978272994" duration="9141000" />
     </task>
     <servers />
   </component>
@@ -1029,7 +1012,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21705000" />
+    <option name="totallyTimeSpent" value="21941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-881" width="1920" height="1106" extended-state="0" />
@@ -1090,7 +1073,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="73" column="40" selection-start-line="73" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,10 +1115,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="51" column="84" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#849#876#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1165,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,10 +1175,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="51" column="84" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#849#876#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,7 +1207,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1262,17 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="51" column="84" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#849#876#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/nio/file/DirectoryStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1281,14 +1253,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/temp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/FileWritingAnagramService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anagramsdb.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1321,10 +1285,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/alagna/anagrams/service/AnagramServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/model/AnagramClassModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DatabaseWritingAnagramService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1583">
-          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="-1140">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5856#5857#0" expanded="true" />
@@ -1353,44 +1343,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/DirectPickingAnagramService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        <state relative-caret-position="225">
+          <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/FileWritingAnagramService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/alagna/anagrams/service/AnagramServiceIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/model/AnagramClassModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/HsqlDatabaseWritingAnagramService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="390">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/BasicAnagramService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/alagna/anagrams/service/impl/MysqlDatabaseWritingAnagramService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="375">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>

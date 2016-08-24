@@ -11,13 +11,13 @@ public class HsqlDatabaseWritingAnagramService extends DatabaseWritingAnagramSer
 	public static final String DATABASE_KEY_COLUMN = "basestring";
 	public static final String DATABASE_VALUE_COLUMN = "value";
 
-	public static final String DATABASE_INIT_SCRIPT[] =
+	protected static final String DATABASE_INIT_SCRIPT[] =
 	{
 		"CREATE TABLE " + DATABASE_TABLE + " (" + DATABASE_KEY_COLUMN + " VARCHAR(30) NOT NULL, " + DATABASE_VALUE_COLUMN + " VARCHAR(30) NOT NULL);",
 		"CREATE INDEX " + DATABASE_KEY_COLUMN + "_index ON " + DATABASE_TABLE + " (" + DATABASE_KEY_COLUMN + ");"
 	};
 
-	public static final String DATABASE_DROP_SCRIPT[] =
+	protected static final String DATABASE_DROP_SCRIPT[] =
 	{
 		"DROP TABLE " + DATABASE_TABLE + ";"
 	};

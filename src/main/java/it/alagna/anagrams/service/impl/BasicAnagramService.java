@@ -27,7 +27,7 @@ public class BasicAnagramService implements AnagramService
 	}
 	
 	@Override
-	public Collection<AnagramClassModel> processAnagramsFile(File file) throws IOException
+	public Collection<AnagramClassModel> processAnagramsFile(final File file) throws IOException
 	{
 		if(!file.exists())
 		{
@@ -35,13 +35,13 @@ public class BasicAnagramService implements AnagramService
 		}
 		
 		// The target collection, which will contain all the found anagram classes.
-		List<AnagramClassModel> anagramClasses = new LinkedList<AnagramClassModel>();
+		final List<AnagramClassModel> anagramClasses = new LinkedList<>();
 		
 		try(BufferedReader reader = new BufferedReader(new FileReader(file)))
 		{
 			while(true)
 			{
-				String line = reader.readLine();
+				final String line = reader.readLine();
 				
 				if(line == null)
 				{
@@ -52,7 +52,7 @@ public class BasicAnagramService implements AnagramService
 				boolean anagramClassFound = false;
 				
 				// Loop through anagram classes to find a possible match with any already processed line
-				for(AnagramClassModel anagramClass : anagramClasses)
+				for(final AnagramClassModel anagramClass : anagramClasses)
 				{
 					if(anagramStrategy.isAnagram(line, anagramClass.getKey()))
 					{
@@ -78,7 +78,7 @@ public class BasicAnagramService implements AnagramService
 		return anagramStrategy;
 	}
 	
-	public void setAnagramStrategy(AnagramStrategy anagramStrategy) {
+	public void setAnagramStrategy(final AnagramStrategy anagramStrategy) {
 		this.anagramStrategy = anagramStrategy;
 	}
 }

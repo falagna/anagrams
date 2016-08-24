@@ -14,7 +14,7 @@ public class MysqlDatabaseWritingAnagramService extends DatabaseWritingAnagramSe
 	public static final String DATABASE_KEY_COLUMN = "basestring";
 	public static final String DATABASE_VALUE_COLUMN = "value";
 
-	public static final String DATABASE_INIT_SCRIPT[] =
+	protected static final String DATABASE_INIT_SCRIPT[] =
 	{
 		"CREATE DATABASE " + DATABASE_NAME + ";",
 		"USE " + DATABASE_NAME + ";",
@@ -24,7 +24,7 @@ public class MysqlDatabaseWritingAnagramService extends DatabaseWritingAnagramSe
 		"CREATE INDEX " + DATABASE_KEY_COLUMN + "_index ON " + DATABASE_TABLE + " (" + DATABASE_KEY_COLUMN + ");"
 	};
 
-	public static final String DATABASE_DROP_SCRIPT[] =
+	protected static final String DATABASE_DROP_SCRIPT[] =
 	{
 		"DROP DATABASE " + DATABASE_NAME + ";",
 		"DROP USER '" + DATABASE_USERNAME + "'@'localhost';",
