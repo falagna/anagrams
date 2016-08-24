@@ -14,17 +14,17 @@ public class AnagramClassModel
 	/**
 	 * The key which identifies the anagram class.
 	 */
-	private String key;
+	private final String key;
 	
 	/**
 	 * A list of words belonging to this anagram class.
 	 */
-	private List<String> words;
+	private final List<String> words;
 	
-	public AnagramClassModel(String key)
+	public AnagramClassModel(final String key)
 	{
 		this.key = key;
-		this.words = new LinkedList<String>();
+		this.words = new LinkedList<>();
 		this.words.add(key);
 	}
 	

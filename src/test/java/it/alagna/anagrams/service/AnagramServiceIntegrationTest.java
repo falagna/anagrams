@@ -1,7 +1,9 @@
 package it.alagna.anagrams.service;
 
 import it.alagna.anagrams.model.AnagramClassModel;
-import it.alagna.anagrams.service.impl.DirectPickingAnagramService;
+import it.alagna.anagrams.service.impl.HsqlDatabaseWritingAnagramService;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,9 +11,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Collection;
-
-import org.junit.Before;
-import org.junit.Test;
 
 public class AnagramServiceIntegrationTest
 {
@@ -24,7 +23,7 @@ public class AnagramServiceIntegrationTest
 	@Before
 	public void setUp() throws Exception
 	{
-		anagramService = new DirectPickingAnagramService();
+		anagramService = new HsqlDatabaseWritingAnagramService();
 	}
 
 	@Test
@@ -45,19 +44,19 @@ public class AnagramServiceIntegrationTest
 		test(DICTIONARY_FILENAME);
 	}
 	
-	protected void test(String filename) throws IOException
+	protected void test(final String filename) throws IOException
 	{
-		long currentTime = System.currentTimeMillis();
+		final long currentTime = System.currentTimeMillis();
 		System.out.println(String.format("******** Processing file '%s' - rows: %d *********", filename, getNumberOfWords(filename)));
 		System.out.println(String.format("************** Results from file '%s' ***************", filename));
 		System.out.println();
 		
-		ClassLoader classLoader = getClass().getClassLoader();
-		File file = new File(classLoader.getResource(filename).getFile());
+		final ClassLoader classLoader = getClass().getClassLoader();
+		final File file = new File(classLoader.getResource(filename).getFile());
 		
-		Collection<AnagramClassModel> anagramClasses = anagramService.processAnagramsFile(file);
+		final Collection<AnagramClassModel> anagramClasses = anagramService.processAnagramsFile(file);
 		
-		for(AnagramClassModel anagramClass : anagramClasses)
+		for(final AnagramClassModel anagramClass : anagramClasses)
 		{
 			// Skip classes with less than two matching words
 			if(anagramClass.getWords().size() < 2)
@@ -65,8 +64,8 @@ public class AnagramServiceIntegrationTest
 				continue;
 			}
 			
-			StringBuilder line = new StringBuilder();
-			for(String value : anagramClass.getWords())
+			final StringBuilder line = new StringBuilder();
+			for(final String value : anagramClass.getWords())
 			{
 				line.append(' ').append(value);
 			}
@@ -81,10 +80,10 @@ public class AnagramServiceIntegrationTest
 		System.out.println();
 	}
 	
-	protected long getNumberOfWords(String filename) throws FileNotFoundException, IOException
+	protected long getNumberOfWords(final String filename) throws FileNotFoundException, IOException
 	{
-		ClassLoader classLoader = getClass().getClassLoader();
-		File file = new File(classLoader.getResource(filename).getFile());
+		final ClassLoader classLoader = getClass().getClassLoader();
+		final File file = new File(classLoader.getResource(filename).getFile());
 		try(BufferedReader reader = new BufferedReader(new FileReader(file)))
 		{
 			return reader.lines().count();
